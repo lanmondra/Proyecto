@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/user/NetBeansProjects/DAM/UF6/EjemploDAOMySQL/src/persistencia/imp/EmpleadoDAOImp.java</file>
+            <file>file:/home/user/NetBeansProjects/DAM/UF6/EjemploDAOMySQL/src/persistencia/imp/ProductoDAOImp.java</file>
+            <file>file:/home/user/NetBeansProjects/DAM/UF6/EjemploDAOMySQL/src/dominio/Producto.java</file>
+            <file>file:/home/user/NetBeansProjects/DAM/UF6/EjemploDAOMySQL/src/conexion/ConexionBD.java</file>
+            <file>file:/home/user/NetBeansProjects/DAM/UF6/EjemploDAOMySQL/src/dominio/Empleado.java</file>
+            <file>file:/home/user/NetBeansProjects/DAM/UF6/EjemploDAOMySQL/src/persistencia/def/EmpleadoDAO.java</file>
+            <file>file:/home/user/NetBeansProjects/DAM/UF6/EjemploDAOMySQL/src/base/Main.java</file>
+        </group>
+    </open-files>
+</project-private>
