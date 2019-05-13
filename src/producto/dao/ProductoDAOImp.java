@@ -1,11 +1,10 @@
-package persistencia.imp;
+package producto.dao;
 
 import conexion.ConexionBD;
-import dominio.Producto;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import persistencia.def.ProductoDAO;
+import producto.dominio.Producto;
 
 public class ProductoDAOImp implements ProductoDAO {
 
@@ -39,7 +38,7 @@ public class ProductoDAOImp implements ProductoDAO {
     }
 
     @Override
-    public boolean actualizarProductos(List<Producto> productos) {
+    public boolean actualizarProducto(Producto producto) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 

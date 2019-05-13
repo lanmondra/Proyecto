@@ -1,6 +1,6 @@
-package persistencia.def;
+package empleado.dao;
 
-import dominio.Empleado;
+import empleado.dominio.Empleado;
 import java.util.List;
 
 public interface EmpleadoDAO {

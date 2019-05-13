@@ -1,10 +1,10 @@
-package persistencia.imp;
+package empleado.dao;
 
 import conexion.ConexionBD;
-import dominio.Empleado;
+import empleado.dominio.Empleado;
 import java.sql.SQLException;
 import java.util.List;
-import persistencia.def.EmpleadoDAO;
+import empleado.dao.EmpleadoDAO;
 
 public class EmpleadoDAOImp implements EmpleadoDAO {
 

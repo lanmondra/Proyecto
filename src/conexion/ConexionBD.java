@@ -29,7 +29,6 @@ public class ConexionBD {
 
         try {
             conexion = DriverManager.getConnection(URL, USER, PASSWORD);
-            System.out.println("Conexion establecida");
         } catch (SQLException ex) {
             System.out.println("No se puede conectar a la base de datos " + DATABASE);
             ex.printStackTrace();
@@ -42,7 +41,6 @@ public class ConexionBD {
     private static void cargarDriver() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            System.out.println("Cargado el driver");
         } catch (ClassNotFoundException ex) {
             System.out.println("No se ha cargado el driver JDBC MySQL");
             System.exit(1);

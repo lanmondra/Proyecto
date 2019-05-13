@@ -1,14 +1,11 @@
-package dominio;
-
-import java.util.List;
-import persistencia.imp.EmpleadoDAOImp;
+package empleado.dominio;
 
 public class Empleado {
+
     private int codigo;
     private String nombre;
     private String apellidos;
     private String password;
-    private static EmpleadoDAOImp empleadoDAO;
 
     public Empleado(int codigo, String nombre, String apellidos, String password) {
         this.codigo = codigo;
@@ -19,10 +16,6 @@ public class Empleado {
 
     public Empleado() {
         this(0, null, null, null);
-    }
-    
-    static{
-        empleadoDAO = new EmpleadoDAOImp();
     }
 
     public int getCodigo() {
@@ -56,26 +49,11 @@ public class Empleado {
     public void setPassword(String password) {
         this.password = password;
     }
-    
-    public static List<Empleado> leerEmpleados(){
-        return empleadoDAO.leerEmpleados();
-    }
-    
-    public static Empleado getEmpleadoPorCodigo(int codigo){
-        return empleadoDAO.getEmpleadoPorCodigo(codigo);
-    }
-    
-    
-    public static boolean actualizarEmpleados(Empleado empleado){
-        return empleadoDAO.actualizarEmpleado(empleado);
-    }
 
     @Override
     public String toString() {
         return String.format("%d %s %s %s%n",
-                getCodigo(),getNombre(),getApellidos(),getPassword());
+                getCodigo(), getNombre(), getApellidos(), getPassword());
     }
-    
-    
-    
+
 }
