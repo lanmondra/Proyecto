@@ -1,42 +1,60 @@
 package tienda.vista;
 
 import empleado.dominio.Empleado;
+import java.util.List;
 import java.util.Scanner;
+import producto.control.GestionaProductos;
+import producto.dao.ProductoDAO;
+import producto.dominio.Producto;
+import tienda.control.GestionTienda;
 import tienda.control.MenuPrincipal;
+import tienda.control.MenuProductos;
 import util.Color;
 
-public class VistaTienda {
+public class VistaProductos {
 
-   public static  MenuPrincipal opcionDesdeMenuPrincipal() {
+    public static MenuProductos opcionDesdeMenuProductos() {
         borrarPantalla();
-        System.out.println("--Menú principal -------------------");
-        System.out.println("   1. Hacer pedido");
-        System.out.println("   2. Modificar producto");
-        System.out.println("   3. Cambiar contraseña de empleado");
-        System.out.println("   4. Cerrar sesión");
+        System.out.println("--------Menú productos ------------");
+        System.out.println("1.1 ._Modificar nombre de Producto");
+        System.out.println("1.2 ._Modificar precio de Producto");
+        System.out.println("1.3 ._Modificar codigo de Producto");
+        System.out.println("1.4 ._Terminar ");
         System.out.println("------------------------------------");
 
         int opcion = pedirOpcionEnRango(1, 4);
 
-        MenuPrincipal menu = null;
+        MenuProductos menu = null;
 
         switch (opcion) {
             case 1:
-                menu = MenuPrincipal.HACER_PEDIDO;
+                menu = MenuProductos.MODIFICAR_NOMBRE;
+                GestionaProductos g = new GestionaProductos();
+                g.updateName();
+
                 break;
             case 2:
-                menu = MenuPrincipal.MODIFICAR_PRODUCTO;
+                menu = MenuProductos.MODIFICAR_PRECIO;
+
+                GestionaProductos gestiona = new GestionaProductos();
+                gestiona.updatePrice();
                 break;
             case 3:
-                menu = MenuPrincipal.CAMBIAR_PASSWORD;
+                menu = MenuProductos.MODIFICAR_CODIGO;
+                GestionaProductos gestion = new GestionaProductos();
+                gestion.updateCode();
                 break;
             case 4:
-                menu = MenuPrincipal.CERRAR_SESION;
+                menu = MenuProductos.SALIR;
+                GestionTienda gestionTienda = new GestionTienda();
+
+                gestionTienda.menu();
+
                 break;
         }
 
         return menu;
-        
+
     }
 
     private static int pedirOpcionEnRango(int min, int max) {
@@ -61,8 +79,8 @@ public class VistaTienda {
 
         return opcion;
     }
-    
-    public static void mensajeBienvenida(Empleado empleado){
+
+    public static void mensajeBienvenida(Empleado empleado) {
         muestraMensaje("Bienvenido " + empleado.getNombre());
         System.out.println();
     }
@@ -79,4 +97,5 @@ public class VistaTienda {
         System.out.print("\033[H\033[2J");
         System.out.flush();
     }
+
 }

@@ -1,0 +1,27 @@
+[producto]
+ [codigo]
+ 222
+ [nombre]
+ Gigabyte B450M DS3H
+ [descripcion]
+ Placa base GIGABYTE serie 400 con tecnología AMD StoreMI
+ [precio]
+ 33.0
+[producto]
+ [codigo]
+ 223
+ [nombre]
+ Kingston A400 SSD 240GB
+ [descripcion]
+ Disco duro A400 de estado sólido de Kingston
+ [precio]
+ 32.95
+[producto]
+ [codigo]
+ 224
+ [nombre]
+ Lenovo Ideapad 530S
+ [descripcion]
+ Ordenador portátil con Intel Core i5, 8GB RAM, 256GB SSD
+ [precio]
+ 599.0

@@ -1,0 +1,27 @@
+[empleado]
+ [codigo]
+ 111
+ [nombre]
+ Mario
+ [apellidos]
+ Blue
+ [contraseña]
+ 1234
+[empleado]
+ [codigo]
+ 112
+ [nombre]
+ Sara
+ [apellidos]
+ Brown
+ [contraseña]
+ 33678
+[empleado]
+ [codigo]
+ 113
+ [nombre]
+ Angel
+ [apellidos]
+ Mondragon
+ [contraseña]
+ 2630

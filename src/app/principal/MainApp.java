@@ -8,7 +8,10 @@ public class MainApp {
 
         GestionTienda gestionTienda = new GestionTienda();
         gestionTienda.iniciar();
-
+       
+        
+        
+      
     }
 
 }

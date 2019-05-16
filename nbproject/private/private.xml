@@ -3,13 +3,31 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/user/NetBeansProjects/DAM/UF6/EjemploDAOMySQL/src/persistencia/imp/EmpleadoDAOImp.java</file>
-            <file>file:/home/user/NetBeansProjects/DAM/UF6/EjemploDAOMySQL/src/persistencia/imp/ProductoDAOImp.java</file>
-            <file>file:/home/user/NetBeansProjects/DAM/UF6/EjemploDAOMySQL/src/dominio/Producto.java</file>
-            <file>file:/home/user/NetBeansProjects/DAM/UF6/EjemploDAOMySQL/src/conexion/ConexionBD.java</file>
-            <file>file:/home/user/NetBeansProjects/DAM/UF6/EjemploDAOMySQL/src/dominio/Empleado.java</file>
-            <file>file:/home/user/NetBeansProjects/DAM/UF6/EjemploDAOMySQL/src/persistencia/def/EmpleadoDAO.java</file>
-            <file>file:/home/user/NetBeansProjects/DAM/UF6/EjemploDAOMySQL/src/base/Main.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/empleado/dao/EmpleadoDAOImp.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/empleado/dao/EmpleadoDAO.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/empleado/control/GestionaEmpleados.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/tienda/control/Gestion.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/empleado/vista/VistaEmpleado.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/factura/Pedido.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/app/principal/MainApp.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/util/Color.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/tienda/vista/VistaTienda.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/factura/pedido1.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/producto/dao/ProductoDAO.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/File/archivoProducto.txt</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/conexion/ConexionBD.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/producto/control/ControladorProducto.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/File/archivoEmple.txt</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/factura/PedidoDAO.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/factura/pedidoDAOImp.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/empleado/control/ControladorEmpleado.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/producto/dominio/Producto.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/tienda/control/GestionTienda.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/empleado/dominio/Empleado.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/tienda/control/MenuPrincipal.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/producto/vista/VistaProducto.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/producto/control/GestionaProductos.java</file>
+            <file>file:/Users/miguelmondragon/Desktop/ejemplodaomysql/src/producto/dao/ProductoDAOImp.java</file>
         </group>
     </open-files>
 </project-private>

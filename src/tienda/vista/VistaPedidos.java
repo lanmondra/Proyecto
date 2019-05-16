@@ -1,42 +1,49 @@
 package tienda.vista;
 
-import empleado.dominio.Empleado;
 import java.util.Scanner;
-import tienda.control.MenuPrincipal;
+import tienda.control.MenuFactura;
+import tienda.control.MenuProductos;
 import util.Color;
+import static util.Color.BULE;
+import factura.*;
 
-public class VistaTienda {
+public class VistaPedidos {
 
-   public static  MenuPrincipal opcionDesdeMenuPrincipal() {
-        borrarPantalla();
-        System.out.println("--Menú principal -------------------");
-        System.out.println("   1. Hacer pedido");
-        System.out.println("   2. Modificar producto");
-        System.out.println("   3. Cambiar contraseña de empleado");
-        System.out.println("   4. Cerrar sesión");
-        System.out.println("------------------------------------");
+    public static MenuFactura opcionDesdeMenufactura() {
+
+        System.out.println("------------------------------------------");
+        System.out.println(BULE + "------------MENU PEDIDO------------------" + Color.DEFAULT);
+        System.out.println("1.1 ._Añadir un producto a la sesta");
+        System.out.println("1.2 ._Visualizar el precio total de la sesta");
+        System.out.println("1.3 ._Imprimir factura");
+        System.out.println("1.4 ._Terminar pedido");
+        System.out.println("------------------------------------------");
 
         int opcion = pedirOpcionEnRango(1, 4);
 
-        MenuPrincipal menu = null;
+        MenuFactura menu = null;
 
         switch (opcion) {
             case 1:
-                menu = MenuPrincipal.HACER_PEDIDO;
+                menu = MenuFactura.AÑADIR_A_LA_CESTA;
+
                 break;
             case 2:
-                menu = MenuPrincipal.MODIFICAR_PRODUCTO;
+                menu = MenuFactura.VER_CESTA;
+
                 break;
             case 3:
-                menu = MenuPrincipal.CAMBIAR_PASSWORD;
+                menu = MenuFactura.IMPRIMIR_FACTURA;
+
                 break;
             case 4:
-                menu = MenuPrincipal.CERRAR_SESION;
+                menu = MenuFactura.TERMINAR_PEDIDO;
+
                 break;
         }
 
         return menu;
-        
+
     }
 
     private static int pedirOpcionEnRango(int min, int max) {
@@ -61,12 +68,11 @@ public class VistaTienda {
 
         return opcion;
     }
-    
-    public static void mensajeBienvenida(Empleado empleado){
-        muestraMensaje("Bienvenido " + empleado.getNombre());
-        System.out.println();
-    }
 
+//    public static void mensajeBienvenida(Empleado empleado) {
+//        muestraMensaje("Bienvenido " + empleado.getNombre());
+//        System.out.println();
+    //  }
     public static void muestraMensaje(String mensaje, Color color) {
         System.out.println(color + mensaje + Color.DEFAULT);
     }
@@ -79,4 +85,5 @@ public class VistaTienda {
         System.out.print("\033[H\033[2J");
         System.out.flush();
     }
+
 }
